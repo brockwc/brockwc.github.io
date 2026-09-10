@@ -3,18 +3,18 @@ title: "Brock Whitbread"
 email: brock.whitbread@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
     A portfolio site for Brock "Pan Blanco" Whitbread
-# baseurl: "/work" # the subpath of your site, e.g. /blog/
-url: "zap-rowsdower.github.io" # the base hostname & protocol for your site
+baseurl: "" # user site deploys at the domain root
+url: "https://brockwc.github.io"
 twitter_username: zapRowsdowr
-github_username:  zap-rowsdower
+github_username:  brockwc
 
 # Build settings
-markdown: redcarpet
-highlighter: pygments
-timezone: America/New_York
+markdown: kramdown
+highlighter: rouge
+timezone: America/Los_Angeles
 
 # Include supported plugins
-gems: 
+plugins:
 - jekyll-mentions
 - jemoji
 - jekyll-redirect-from
