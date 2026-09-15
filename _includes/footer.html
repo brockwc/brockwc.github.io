@@ -1,6 +1,10 @@
-<footer class="footer-global container">
-	<div class="row">
-  	<div class="six columns offset-by-three">
+<footer class="border-t border-zinc-200 dark:border-zinc-800">
+  <div class="mx-auto flex max-w-3xl flex-col gap-3 px-6 py-8 text-sm text-zinc-600 sm:flex-row sm:items-center sm:justify-between dark:text-zinc-400">
+    <p>&copy; {{ site.time | date: "%Y" }} Brock Whitbread</p>
+    <div class="flex items-center gap-5">
+      <a href="https://github.com/{{ site.github_username }}" class="transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">GitHub</a>
+      <a href="mailto:{{ site.email }}" class="transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">Email</a>
+      <a href="{{ '/feed.xml' | prepend: site.baseurl }}" class="transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">RSS</a>
     </div>
-	</div>
+  </div>
 </footer>

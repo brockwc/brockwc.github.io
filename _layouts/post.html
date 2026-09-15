@@ -1,15 +1,39 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<article>
+  <header class="mb-10">
+    <div class="mb-4 flex flex-wrap items-center gap-3 text-sm">
+      {% for cat in page.categories %}
+        <a href="{{ '/categories/' | prepend: site.baseurl }}#{{ cat | slugify }}" class="rounded-full border border-orange-200 bg-orange-50 px-2.5 py-0.5 font-medium text-orange-700 transition-colors hover:border-orange-300 dark:border-orange-500/30 dark:bg-orange-500/10 dark:text-orange-400 dark:hover:border-orange-500/50">{{ cat }}</a>
+      {% endfor %}
+      <time datetime="{{ page.date | date_to_xmlschema }}" class="text-zinc-600 dark:text-zinc-400">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+    <h1 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">{{ page.title }}</h1>
   </header>
 
-  <article class="post-content">
+  <div class="prose prose-zinc max-w-none dark:prose-invert">
     {{ content }}
-  </article>
+  </div>
 
-</div>
+  {% if page.previous or page.next %}
+    <nav class="mt-14 flex items-start justify-between gap-6 border-t border-zinc-200 pt-6 text-sm dark:border-zinc-800" aria-label="Post navigation">
+      <div class="max-w-[45%]">
+        {% if page.previous %}
+          <a href="{{ page.previous.url | prepend: site.baseurl }}" class="group block">
+            <span class="block text-xs font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Previous</span>
+            <span class="font-medium text-zinc-900 transition-colors group-hover:text-orange-700 dark:text-zinc-100 dark:group-hover:text-orange-400">{{ page.previous.title }}</span>
+          </a>
+        {% endif %}
+      </div>
+      <div class="max-w-[45%] text-right">
+        {% if page.next %}
+          <a href="{{ page.next.url | prepend: site.baseurl }}" class="group block">
+            <span class="block text-xs font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Next</span>
+            <span class="font-medium text-zinc-900 transition-colors group-hover:text-orange-700 dark:text-zinc-100 dark:group-hover:text-orange-400">{{ page.next.title }}</span>
+          </a>
+        {% endif %}
+      </div>
+    </nav>
+  {% endif %}
+</article>

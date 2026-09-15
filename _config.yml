@@ -1,8 +1,9 @@
 # Site settings
 title: "Brock Whitbread"
 email: brock.whitbread@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-    A portfolio site for Brock "Pan Blanco" Whitbread
+description: >
+    Notes, project updates, and a build log from Brock Whitbread, a software
+    engineer finishing his CS degree at the University of Colorado Boulder.
 baseurl: "" # user site deploys at the domain root
 url: "https://brockwc.github.io"
 twitter_username: zapRowsdowr
@@ -20,3 +21,14 @@ plugins:
 - jekyll-redirect-from
 - jekyll-sitemap
 - jekyll-feed
+
+# Keep build tooling out of the published site
+exclude:
+- Gemfile
+- Gemfile.lock
+- package.json
+- package-lock.json
+- README.md
+- css/tailwind.src.css
+- node_modules
+- vendor

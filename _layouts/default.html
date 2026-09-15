@@ -1,6 +1,13 @@
-{% include head.html %}
-{% include header.html %}
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body class="flex min-h-screen flex-col bg-zinc-50 font-sans text-zinc-700 antialiased dark:bg-zinc-950 dark:text-zinc-300">
+    {% include header.html %}
 
-    {{ content }}
+    <main class="mx-auto w-full max-w-3xl flex-1 px-6 py-10 sm:py-14">
+      {{ content }}
+    </main>
 
-{% include footer.html %}
+    {% include footer.html %}
+  </body>
+</html>
