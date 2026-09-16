@@ -1,8 +1,8 @@
 # Site settings
-title: "Brock Whitbread"
+title: "Brock Whitbread-Cole"
 email: brock.whitbread@gmail.com
 description: >
-    Notes, project updates, and a build log from Brock Whitbread, a software
+    Notes, project updates, and a build log from Brock Whitbread-Cole, a software
     engineer finishing his CS degree at the University of Colorado Boulder.
 baseurl: "" # user site deploys at the domain root
 url: "https://brockwc.github.io"

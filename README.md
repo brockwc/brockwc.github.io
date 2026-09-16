@@ -1,6 +1,6 @@
 # brockwc.github.io
 
-Personal site for Brock Whitbread. Jekyll (built by GitHub Pages) with Tailwind CSS v4.
+Personal site for Brock Whitbread-Cole. Jekyll (built by GitHub Pages) with Tailwind CSS v4.
 
 ## Where things live
 
