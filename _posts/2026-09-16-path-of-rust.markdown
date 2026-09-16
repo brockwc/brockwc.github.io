@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Picking the project: Path of Rust"
-date: 2026-09-16 20:00:00 -0700
+date: 2026-09-16 12:00:00 -0700
 categories: [capstone]
 ---
 
