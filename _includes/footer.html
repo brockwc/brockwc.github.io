@@ -1,6 +1,9 @@
 <footer class="border-t border-zinc-200 dark:border-zinc-800">
   <div class="mx-auto flex max-w-3xl flex-col gap-3 px-6 py-8 text-sm text-zinc-600 sm:flex-row sm:items-center sm:justify-between dark:text-zinc-400">
-    <p>&copy; {{ site.time | date: "%Y" }} Brock Whitbread-Cole</p>
+    <div class="space-y-1">
+      <p>&copy; {{ site.time | date: "%Y" }} Brock Whitbread-Cole</p>
+      <p class="text-xs">Badger icon by <a href="https://game-icons.net" class="underline decoration-zinc-300 underline-offset-2 transition-colors hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100">Delapouite</a>, <a href="https://creativecommons.org/licenses/by/3.0/" class="underline decoration-zinc-300 underline-offset-2 transition-colors hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100">CC BY 3.0</a></p>
+    </div>
     <div class="flex items-center gap-5">
       <a href="https://github.com/{{ site.github_username }}" class="transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">GitHub</a>
       <a href="mailto:{{ site.email }}" class="transition-colors hover:text-zinc-900 dark:hover:text-zinc-100">Email</a>
