@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rustlings, the guessing game, and the first three chapters"
-date: 2026-09-24 12:00:00 -0700
+date: 2026-09-24 10:30:00 -0700
 categories: [capstone]
 ---
 
