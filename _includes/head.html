@@ -9,11 +9,13 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="icon" href="{{ '/favicon.svg' | prepend: site.baseurl }}" type="image/svg+xml">
 
+  <link rel="preload" href="{{ '/css/main.css' | prepend: site.baseurl }}" as="style">
+  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+  <style>html{background-color:#fafafa}@media (prefers-color-scheme:dark){html{background-color:#09090b}}</style>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-
-  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
 
   <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
