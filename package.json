@@ -3,8 +3,8 @@
   "private": true,
   "description": "Brock Whitbread-Cole's personal site (Jekyll + Tailwind CSS)",
   "scripts": {
-    "css:build": "tailwindcss -i css/tailwind.src.css -o css/main.css --minify",
-    "css:watch": "tailwindcss -i css/tailwind.src.css -o css/main.css --watch"
+    "css:build": "tailwindcss -i css/tailwind.src.css -o _includes/main.css --minify",
+    "css:watch": "tailwindcss -i css/tailwind.src.css -o _includes/main.css --watch"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
