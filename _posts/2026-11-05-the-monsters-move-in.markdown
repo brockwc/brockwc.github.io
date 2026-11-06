@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The monsters move in"
-date: 2026-11-05 17:20:00 -0800
+date: 2026-11-05 17:02:57 -0800
 categories: [capstone]
 ---
 
